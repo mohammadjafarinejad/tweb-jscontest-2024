@@ -56,6 +56,9 @@ import {Accessor, createRoot, createSignal, Setter} from 'solid-js';
 import SelectedEffect from '../chat/selectedEffect';
 import PopupMakePaid from './makePaid';
 import paymentsWrapCurrencyAmount from '../../helpers/paymentsWrapCurrencyAmount';
+// import {Helpers} from '../mediaEditor/MediaEditorContext';
+import PopupMediaEditor, {getCurrentMediaEditorPopup} from './mediaEditor';
+import {MEHelpers} from '../mediaEditor/core/helpers';
 
 type SendFileParams = SendFileDetails & {
   file?: File,
@@ -334,6 +337,19 @@ export default class PopupNewMedia extends PopupElement {
           this.removeMediaSpoiler(item);
         },
         verify: () => !!(isMedia && item.mediaSpoiler) && !this.willAttach.stars
+      },
+      {
+        icon: 'edit',
+        text: 'ShowMediaEditor',
+        onClick: () => this._showMediaEditor(item.file, (newFile) => {
+          const index = this.files.indexOf(item.file);
+          if(index >= 0 && index < this.files.length) {
+            this.files[index] = newFile;
+          } else {
+            throw new Error('Invalid index');
+          }
+        }),
+        verify: () => isMedia && MEHelpers.canEditMedia(item.file)
       }],
       listenTo: this.mediaContainer,
       listenerSetter: this.listenerSetter,
@@ -385,6 +401,14 @@ export default class PopupNewMedia extends PopupElement {
     }
 
     currentPopup = this;
+  }
+
+  private _showMediaEditor(file: File, onConfirm: (newFile: File) => void) {
+    if(getCurrentMediaEditorPopup()) return;
+    new PopupMediaEditor(file, (newFile) => {
+      onConfirm(newFile);
+      this.attachFiles();
+    }).show();
   }
 
   private async canSendPaidMedia() {
@@ -637,6 +661,7 @@ export default class PopupNewMedia extends PopupElement {
   }
 
   private onKeyDown = (e: KeyboardEvent) => {
+    if(getCurrentMediaEditorPopup()) return;
     const target = e.target as HTMLElement;
     const {input} = this.messageInputField;
     if(target !== input) {
@@ -1154,6 +1179,11 @@ export default class PopupNewMedia extends PopupElement {
     }).then(() => {
       this.onRender();
       this.onScroll();
+      MEHelpers.Development.showForTest(() => {
+        this._showMediaEditor(files[0], (file) => {
+          files[0] = file;
+        })
+      });
     });
   }
 }

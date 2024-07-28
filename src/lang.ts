@@ -2898,7 +2898,16 @@ const lang = {
   'Chat.UploadLimit.Text': {
     'one_value': 'Subscribe to [Telegram Premium]() to increase upload speeds %d time.',
     'other_value': 'Subscribe to [Telegram Premium]() to increase upload speeds %d times.'
-  }
+  },
+  'ShowMediaEditor': 'Edit Media',
+  'MediaEditor.Context.Delete': 'Delete',
+  'MediaEditor.Context.Flip': 'Flip',
+  'MediaEditor.Context.AddText': 'Add Text',
+  'MediaEditor.Context.Edit': 'Edit',
+  'MediaEditor.Context.Duplicate': 'Duplicate',
+  'MediaEditor.HEX': 'HEX',
+  'MediaEditor.RGB': 'RGB',
+  'MediaEditor.AddTextPlaceholder': 'Add Text'
 };
 
 export default lang;

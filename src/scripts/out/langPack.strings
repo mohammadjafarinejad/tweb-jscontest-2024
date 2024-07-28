@@ -2520,3 +2520,11 @@
 "PHONE_CODE_INVALID" = "Invalid code";
 "PHONE_CODE_EXPIRED" = "Code expired";
 "PASSWORD_HASH_INVALID" = "Incorrect password";
+"MediaEditor.Context.Delete" = "Delete";
+"MediaEditor.Context.AddText" = "Add Text";
+"MediaEditor.Context.Flip" = "Flip";
+"MediaEditor.Context.Edit" = "Edit";
+"MediaEditor.Context.Duplicate" = "Duplicate";
+"MediaEditor.HEX" = "HEX";
+"MediaEditor.RGB" = "RGB";
+"MediaEditor.AddTextPlaceholder" = "Add Text";

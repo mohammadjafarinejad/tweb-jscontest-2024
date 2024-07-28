@@ -394,7 +394,7 @@ export default class StickersTab extends EmoticonsTabC<StickersTabCategory<Stick
   }
 
   public destroy() {
-    this.stickerRenderer.destroy();
+    if(this.stickerRenderer) this.stickerRenderer.destroy();
     super.destroy();
   }
 

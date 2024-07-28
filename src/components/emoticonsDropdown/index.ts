@@ -120,29 +120,35 @@ export class EmoticonsDropdown extends DropdownHover {
 
   private _chatInput: ChatInput;
   public textColor: string;
-
+  public isMediaEditor: boolean;
   public isStandalone: boolean;
+  private _customOnSelect?: (emoji: {element: HTMLElement} & ReturnType<typeof getEmojiFromElement>) => void;
 
   constructor(options: {
     customParentElement?: HTMLElement,
     // customAnchorElement?: HTMLElement,
     getOpenPosition?: () => DOMRectEditable,
+    isMediaEditor?: boolean;
     tabsToRender?: EmoticonsTab[],
     customOnSelect?: (emoji: {element: HTMLElement} & ReturnType<typeof getEmojiFromElement>) => void,
   } = {}) {
     super({
       element: renderEmojiDropdownElement(),
+      keepOpen: options.isMediaEditor,
       ignoreOutClickClassName: 'input-message-input'
     });
     safeAssign(this, options);
 
     this.listenerSetter = new ListenerSetter();
     this.isStandalone = !!options?.tabsToRender;
+    this.isMediaEditor = options.isMediaEditor;
+    this._customOnSelect = options.customOnSelect;
+    if(this.isMediaEditor && !this._customOnSelect) throw new Error('customOnSelect is necessary for isMediaEditor');
     this.element.classList.toggle('is-standalone', this.isStandalone)
 
     this.rights = {
       send_gifs: undefined,
-      send_stickers: undefined
+      send_stickers: this.isMediaEditor ? true : undefined
     };
 
     this.addEventListener('open', async() => {
@@ -652,6 +658,16 @@ export class EmoticonsDropdown extends DropdownHover {
     const docId = target.dataset.docId;
     if(!docId) return false;
 
+    if(this._customOnSelect) {
+      this._customOnSelect({
+        element: target,
+        emoji: '',
+        docId
+      });
+      return true;
+    }
+    else {
+    }
     return this.sendDocId({document: docId, clearDraft, silent, target, ignoreNoPremium});
   };
 

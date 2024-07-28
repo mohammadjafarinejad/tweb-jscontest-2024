@@ -1,3 +1,6 @@
+### 2.1.1 (520)
+Media Editor https://t.me/mmdjn_contest
+
 ### 2.1.0 (491)
 You can see the full list of new features and improvements here: https://t.me/WebK_en/16
 
@@ -16,13 +19,13 @@ You can see the full list of new features and improvements here: https://t.me/We
 📚 [Topics 2.0](https://telegram.org/blog/ultimate-privacy-topics-2-0#topics-2-0)
 Admins of **any group** can enable Topics, creating separate spaces within the group to discuss different subjects – with a sleek **two-column layout** to easily navigate chats.
 
-😶‍🌫️ [Hidden Media](https://telegram.org/blog/hidden-media-zero-storage-profile-pics#hidden-media) 
+😶‍🌫️ [Hidden Media](https://telegram.org/blog/hidden-media-zero-storage-profile-pics#hidden-media)
 Media hidden with a shimmering spoiler effect is properly displayed in the app – just tap or click to view the image. The next [WebK](http://web.telegram.org/k) update will allow you to send media with this spoiler effect.
 
-🏴‍☠️ [No-SIM Signup and Login](https://telegram.org/blog/ultimate-privacy-topics-2-0#sign-up-without-a-sim-card) 
+🏴‍☠️ [No-SIM Signup and Login](https://telegram.org/blog/ultimate-privacy-topics-2-0#sign-up-without-a-sim-card)
 Users who have an **anonymous number** from [Fragment](https://fragment.com/numbers) can login to their existing account or create a **new account** with the number.
 
-🔤 [Collectible Usernames](https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames)  
+🔤 [Collectible Usernames](https://telegram.org/blog/topics-in-groups-collectible-usernames#collectible-usernames)
 Owners of collectible usernames can now **assign collectibles** to their personal account, groups or channels – and **manage** them within the app.
 
 Lastly, the app also preserves your **history stack** – if you follow a [t.me](https://t.me) link to another message in a chat, you can return to the **first message** with the 🔽 button.
@@ -30,9 +33,9 @@ Lastly, the app also preserves your **history stack** – if you follow a [t.me]
 ### 1.6.0 (244)
 Today, [WebK](https://web.telegram.org/k) introduces a redesigned **Emoji and Sticker Panel** – try the **collapsible section** for default emoji categories and the **scrollable bar** for your custom emoji sets.
 
-The new Panel features a beautiful blur effect on most desktop browsers and allows you to **send** or **edit** messages containing custom emoji. __(All users can try out this feature in their Saved Messages)__ 
+The new Panel features a beautiful blur effect on most desktop browsers and allows you to **send** or **edit** messages containing custom emoji. __(All users can try out this feature in their Saved Messages)__
 
-In the Stickers tab, you can now add or remove stickers from favorites, **send without sound** or individually delete them from the __Recents__ section. 
+In the Stickers tab, you can now add or remove stickers from favorites, **send without sound** or individually delete them from the __Recents__ section.
 
 **Preview Stickers and Emoji**
 You can now get a closer look at stickers and emoji, both in the panel and in chats. Click and hold, then hover your cursor over the one you'd like to see in better detail.
@@ -42,7 +45,7 @@ Stickers are now rendered more efficiently, using fewer resources and **saving b
 **Downloading Files**
 The download flow has been reworked from scratch. When you download something, the app uses your connection in the **most efficient** way possible. Premium users will notice how dramatically fast the app downloads files for them – a little demo is available [here](https://t.me/WebK_en/7?comment=531).
 
-Large files of **up to 4 GB** are now supported for both upload and download. There is also support for native downloading in certain browsers – your browser will place active downloads on the instrument bar. 
+Large files of **up to 4 GB** are now supported for both upload and download. There is also support for native downloading in certain browsers – your browser will place active downloads on the instrument bar.
 
 **Payments 2.0**
 Significant optimizations were added to smoothly process payments in **any browser**, and adding familiar functionality from other Telegram apps. Bot payments, @donate invoices and more are supported – including the ability to subscribe to Telegram Premium with @PremiumBot.
@@ -51,20 +54,20 @@ Dozens of bug fixes were also made to the app – but those can be a bit boring
 
 ### 1.5.0 (178)
 1️⃣ Introducing support for **Multiple Tabs** – a first for Telegram Web Apps – customizing how you browse Telegram to increase comfort and productivity.
- 
+
 • Open several tabs or browser windows to view multiple chats or channels simultaneously.
 • Organize your Telegram workflow on multiple monitors by moving tabs to different screens.
 • Use `⌘/Ctrl + click` or `middle-click` on any conversation in your chat list to open it in a separate tab.
- 
+
 All messages and content are seamlessly synced across the tabs. To use multiple tabs on Safari, kindly consider switching to another browser for the best experience. Due to Safari’s [technical limitations](https://t.me/WebK_en/5), the WebK app can still only be used there in a single tab.
- 
+
 2️⃣ WebK gets even more stylish, adding:
- 
+
 • Animated placeholders when loading the chat list.
 • Scrolling profile pictures in groups that move up and down with their messages.
 • Menu redesigns with beautiful new blur effects.
-• Colored reply previews that match the color of your chat partners' names. 
- 
+• Colored reply previews that match the color of your chat partners' names.
+
 This update also includes several bug fixes, removing issues with:
 - Incorrect unread values
 - Visual errors in placeholders
@@ -73,7 +76,7 @@ This update also includes several bug fixes, removing issues with:
 - and many more 🛠
 
 ### 1.4.2 (161)
-* The Video Player now supports **Picture-in-Picture** mode – keep messaging and switching chats while watching videos. Open a video, then click or tap the icon in the bottom right corner. 
+* The Video Player now supports **Picture-in-Picture** mode – keep messaging and switching chats while watching videos. Open a video, then click or tap the icon in the bottom right corner.
 * The **Audio Player** has been packed with two new features for music lovers: set your favorite song to **repeat** or change the **playback order** for playlists. It will also **remember** your playback settings __(volume, repeat, and speed)__.
 * Replies in Forwarded Messages – reply previews are now included when **forwarding messages** to other chats, so everyone can see the full context of your inside jokes.
 * From your chat list, hit the `ESC` key and instantly start typing in Search.
@@ -97,13 +100,13 @@ This update also includes several bug fixes, removing issues with:
 * Fixed opening chat at wrong position.
 
 ### 1.4.0 (129)
-WebK introduced Video Chats back in December. 
+WebK introduced Video Chats back in December.
 
 And now we are proud to launch the first-ever version of Telegram P2P Calls on the Web – bringing native support for calls between two users, secured by end-to-end encryption.
 
-Seamlessly call anyone, regardless of the app they are using – calls will work between the WebK app and any other stable Telegram app: Android, iOS, Desktop, and macOS. 
+Seamlessly call anyone, regardless of the app they are using – calls will work between the WebK app and any other stable Telegram app: Android, iOS, Desktop, and macOS.
 
-To call someone, open your chat with that user and click or tap the Phone icon in the top right corner. 
+To call someone, open your chat with that user and click or tap the Phone icon in the top right corner.
 
 We mainly focused on calls in this update but also made important under-the-hood changes to the login flow, fixing rare issues when signing in.
 
@@ -154,24 +157,24 @@ New:
 * The app checks for new updates every 30 minutes.
 * An 'Update' button appears when a new version is available.
 
-Fixes: 
+Fixes:
 * The unread counter for mentions now displays properly.
 * No more flickering of the timestamp when sending or receiving messages.
 * The app now correctly renders the very first message sent to bots.
 * You will no longer see yourself as a 'Deleted Account'.
 * Fixed keyboard input when bot suggestions are active.
 * Public polls no longer disappear when switching chats.
-* Search results correctly display forwarded messages from authors who restricted links to their accounts. 
+* Search results correctly display forwarded messages from authors who restricted links to their accounts.
 * Channel admins can edit older messages again.
 * The message bar shrinks and expands with a totally new animation.
 
 ### 1.0.0 (36)
 An early version of Video Chats is available in all groups and channels – with a polished design exclusively for Web:
 
-* Expand to view your video chats in fullscreen. 
-* Try the wide mode, which shows video feeds side-by-side. 
+* Expand to view your video chats in fullscreen.
+* Try the wide mode, which shows video feeds side-by-side.
 * Resize and place the video layout on any part of the screen.
-* Minimize the window and the app will remember its precious size and position. 
+* Minimize the window and the app will remember its precious size and position.
 * Mute or leave the video chat from the interactive header.
 
 ### 0.9.2 (32)
